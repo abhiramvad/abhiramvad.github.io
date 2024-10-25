@@ -56,7 +56,7 @@ const App = () => {
               transform hover:scale-105 transition-transform duration-300
               ring-blue-500">
               <img 
-                src="./src/assets/dp.jpeg"
+                src="dp.jpeg"
                 alt="Abhiram Vadlapatla" 
                 className="w-full h-full object-cover"
               />
@@ -93,7 +93,7 @@ const App = () => {
             <div className="mt-12 w-full max-w-2xl">
               <div className={`grid grid-cols-1 md:grid-cols-1 gap-4`}>
                 <button 
-                  onClick={() => window.open('./src/assets/SDE Resume Final Dec 2025.pdf')}
+                  onClick={() => window.open('SDE Resume Final Dec 2025.pdf')}
                   className={`${baseStyles.cardBg} p-4 rounded-xl shadow-md
                     hover:shadow-lg transform hover:-translate-y-1 
                     transition-all duration-300 group
