@@ -127,7 +127,7 @@ const App = () => {
                   'Fine-tuned a 124M-parameter GPT-2 model on curated Python datasets, achieving 56.06 perplexity.',
                   'Implemented custom loss functions and learning rate schedules prioritizing data science tokens.'
                 ],
-                link: '#',
+                link: 'https://huggingface.co/abhiramvad/codeparrot-ds',
                 tags: ['Python', 'NLP', 'Machine Learning']
               },
               {
@@ -137,7 +137,7 @@ const App = () => {
                   'Optimized MobileNet and Timesformer models, achieving 4x size reduction through quantization.',
                   'Improved model deployment efficiency for cloud and on-device performance.'
                 ],
-                link: '#',
+                link: 'https://disml2024.github.io/disml-workshop-2024/assets/6_978291_86361703_Spring23_598Final_Proj_Report.pdf',
                 tags: ['Video AI', 'Optimization', 'Edge Computing']
               },
               {
