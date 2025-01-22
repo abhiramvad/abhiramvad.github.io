@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Moon, Sun, ChevronDown } from 'lucide-react';
 
 const App = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [activeSection, setActiveSection] = useState('projects');
   const [isVisible, setIsVisible] = useState({});
 
@@ -65,11 +65,8 @@ const App = () => {
               'bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600'}`}>
               Abhiram Vadlapatla
             </h1>
-            <h2 className={`text-2xl mb-6 ${baseStyles.secondaryText}`}>AI Engineer & Full Stack Developer</h2>
-            <p className={`max-w-2xl text-lg leading-relaxed ${baseStyles.secondaryText}`}>
-              Crafting AI-driven solutions with expertise in Generative AI and ML Ops. 
-              Passionate about building impactful applications that merge cutting-edge AI with robust engineering.
-            </p>
+            <h2 className={`text-2xl mb-6 ${baseStyles.secondaryText}`}>Senior Software Development Engineer</h2>
+            <p className={`max-w-2xl text-lg leading-relaxed ${baseStyles.secondaryText}`}>Full stack software engineer with 5+ years of experience in building scalable web applications and Agentic AI-driven solutions to deliver impactful user experiences and accelerate business outcomes</p>
             {/* Social Links */}
             <div className="flex gap-4 mt-8">
               <a href="https://github.com/abhiramvad" 
@@ -93,7 +90,7 @@ const App = () => {
             <div className="mt-12 w-full max-w-2xl">
               <div className={`grid grid-cols-1 md:grid-cols-1 gap-4`}>
                 <button 
-                  onClick={() => window.open('SDE Resume Final Dec 2025.pdf')}
+                  onClick={() => window.open('SDE Resume Final May 2025.pdf')}
                   className={`${baseStyles.cardBg} p-4 rounded-xl shadow-md
                     hover:shadow-lg transform hover:-translate-y-1 
                     transition-all duration-300 group
@@ -124,24 +121,44 @@ const App = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                title: 'EpicDiffusion Playground',
-                subtitle: 'Text to Video Generation App',
+                title: 'Training a Custom GPT Model',
+                subtitle: 'Python Data Science Stack Using GPT-2',
                 description: [
-                  'Created innovative text-to-video pipeline with I2VGen and Stable Diffusion XL',
-                  'Enhanced model pipeline achieving CLIP score improvement from 0.21 to 0.26'
+                  'Fine-tuned a 124M-parameter GPT-2 model on curated Python datasets, achieving 56.06 perplexity.',
+                  'Implemented custom loss functions and learning rate schedules prioritizing data science tokens.'
                 ],
-                link: 'https://disml2024.github.io/disml-workshop-2024/assets/6_978291_86361703_Spring23_598Final_Proj_Report.pdf',
-                tags: ['React', 'PyTorch', 'Diffusers']
+                link: '#',
+                tags: ['Python', 'NLP', 'Machine Learning']
               },
               {
-                title: 'Video Spotlight',
-                subtitle: 'Semantic Search in Videos',
+                title: 'Model Compression for Video Understanding',
+                subtitle: 'Deploying AI on Edge Devices',
                 description: [
-                  'Built React video player with AI-powered search achieving 0.5ms latency',
-                  'Optimized video AI models with 4x size reduction through quantization'
+                  'Optimized MobileNet and Timesformer models, achieving 4x size reduction through quantization.',
+                  'Improved model deployment efficiency for cloud and on-device performance.'
                 ],
-                link: 'https://github.com/abhiramvad/video-search-ui?tab=readme-ov-file',
-                tags: ['BERT', 'React', 'TensorFlow']
+                link: '#',
+                tags: ['Video AI', 'Optimization', 'Edge Computing']
+              },
+              {
+                title: 'Soul Machines Conversational AI',
+                subtitle: 'AI-driven Conversational Agent',
+                description: [
+                  'Developed conversational AI for healthcare use, leveraging advanced NLP and soul machine technologies.',
+                  'Integrated APIs to deliver personalized experiences with robust backend architecture.'
+                ],
+                link: 'https://ssa-soul-machines-dev.us-east.philips-healthsuite.com/access/g00dsl33p4all',
+                tags: ['NLP', 'AI', 'Backend']
+              },
+              {
+                title: 'Philips SmartSleep Analyzer',
+                subtitle: 'Advanced Sleep Analysis Tool',
+                description: [
+                  'Developed data pipelines for user sleep pattern analysis.',
+                  'Integrated ML models to offer personalized sleep insights.'
+                ],
+                link: 'https://www.smartsleep-analyzer.philips.com/',
+                tags: ['Python', 'Flask', 'ML']
               }
             ].map((project, idx) => (
               <div key={idx} 
@@ -183,22 +200,28 @@ const App = () => {
             {[
               {
                 company: 'Goldman Sachs',
-                role: 'Senior Software Engineer',
+                role: 'Software Engineer 3 (Vice President)',
                 period: 'Jul 2022 - Dec 2023',
                 achievements: [
-                  'Built IAM knowledge bot with React, Socket IO, Flask, and GPT-3.5',
-                  'Developed high-performance JS analytics library for client-side observability',
-                  'Created real-time analytics pipeline processing 2GB data hourly'
+                  'Implemented IAM knowledge bot using React, Socket IO, Flask, Langchain, and GPT-3.5 LLM for 30% faster query resolution.',
+                  'Accelerated go-live time to production from 1 week to 48 hours by facilitating instant thematic customizations with a React Drag and Drop live preview tool.',
+                  'Achieved 100% data transparency and real-time analytics within a 1-minute window by implementing a data ingestion pipeline processing 2GB of data hourly.',
+                  'Shipped a high-performance JS analytics library to production using web beacon API for client-side observability, boosting dev efficiency 1.5x.',
+                  'Enhanced the security profile of the IAM platform by integrating ThreatMetrix into the Spring Boot server, achieving a 30% improvement in fraudulent login detection.',
+                  'Keynote speaker at Goldman Sachs, sharing insights with 200 developers on Identity and Access Management.'
                 ]
               },
               {
                 company: 'Philips Healthcare',
-                role: 'Senior Software Engineer',
-                period: 'Apr 2020 - Jun 2022',
+                role: 'Software Engineer 3',
+                period: 'Jan 2018 - Jun 2022',
                 achievements: [
-                  'Increased user engagement by 50% with real-time chatbot implementation',
-                  'Led code quality initiatives achieving 100% test coverage',
-                  'Reduced deployment times by 50% through database optimization'
+                  'Led development of conversational AI system (SmartSleep Analyzer) using RASA SDK and custom NLU/NLP models, achieving a 50% increase in user engagement.',
+                  'Developed a custom website tracking system to process clickstream data, achieving an 80% growth in conversion rate.',
+                  'Implemented database integration with Flask, SQLAlchemy, and Alembic, reducing deployment times by 50%.',
+                  'Integrated New Relic with Flask app to support APM and latency metrics, achieving a 45% improvement in performance monitoring.',
+                  'Improved API service adoption by 20% by designing an API monetization ecosystem and developer portal using Kong API gateway.',
+                  'Reduced security and traffic control issues for REST APIs by 70% through rate-limiting plugins, CORS enforcers, and bot detection.'
                 ]
               }
             ].map((exp, idx) => (
@@ -230,24 +253,34 @@ const App = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                title: 'AI & Machine Learning',
-                skills: ['PyTorch', 'Diffusers', 'Transformers', 'LangChain', 'CoreML', 'RASA NLP'],
+                title: 'Programming Languages',
+                skills: ['Python', 'Java', 'Typescript', 'Javascript', 'Bash'],
                 colorClass: isDark ? 'bg-purple-900 text-purple-300' : 'bg-purple-50 text-purple-600'
               },
               {
-                title: 'Languages',
-                skills: ['Python', 'TypeScript', 'Java', 'C++'],
+                title: 'Backend Frameworks/Libraries',
+                skills: ['Flask', 'Spring Boot', 'Node.js', 'OAuth2.0', 'Langchain'],
                 colorClass: isDark ? 'bg-blue-900 text-blue-300' : 'bg-blue-50 text-blue-600'
               },
               {
-                title: 'Frontend',
-                skills: ['React', 'Angular', 'TypeScript', 'Tailwind'],
+                title: 'UI Frameworks/Libraries',
+                skills: ['React', 'Angular', 'NX', 'HTML', 'CSS', 'SCSS', 'Bootstrap', 'Webpack', 'Yarn', 'Copilot SDK'],
                 colorClass: isDark ? 'bg-green-900 text-green-300' : 'bg-green-50 text-green-600'
               },
               {
-                title: 'Backend & Cloud',
-                skills: ['Flask', 'Django', 'AWS', 'Kubernetes'],
+                title: 'Databases',
+                skills: ['SQL Server', 'Prometheus', 'Elasticsearch', 'MySQL', 'Postgres', 'BigQuery', 'SQLite'],
                 colorClass: isDark ? 'bg-orange-900 text-orange-300' : 'bg-orange-50 text-orange-600'
+              },
+              {
+                title: 'Cloud/SaaS',
+                skills: ['Terraform', 'Cloudfoundry', 'AWS ECS', 'Docker', 'Kubernetes', 'Lambda', 'AWS Kinesis', 'Fluent Bit', 'NewRelic', 'Grafana', 'Langsmith'],
+                colorClass: isDark ? 'bg-blue-900 text-blue-300' : 'bg-blue-50 text-blue-600'
+              },
+              {
+                title: 'Protocols & Certifications',
+                skills: ['REST', 'GraphQL', 'gRPC', 'WebSockets', 'SSE', 'SMTP', 'AWS Machine Learning Associate (2024)', 'Deep Learning Nanodegree (Udacity, 2021)'],
+                colorClass: isDark ? 'bg-purple-900 text-purple-300' : 'bg-purple-50 text-purple-600'
               }
             ].map((category, idx) => (
               <div key={idx}>
